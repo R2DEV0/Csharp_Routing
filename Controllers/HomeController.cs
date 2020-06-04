@@ -7,9 +7,10 @@ namespace First_Proj
         // Request
         // localhost: 5000/
         [HttpGet("")]
-        public string Index()
+        public ViewResult Index()
         {
-            return "This is my Index!";
+            // looks for File called Views/Home/Index.cshtml 
+            return View();
         }
 
         // localhost: 5000/projects
